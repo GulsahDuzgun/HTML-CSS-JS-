@@ -7,9 +7,9 @@ let filterArr = [];
 document.querySelector('#searchKey').addEventListener('input', filterFunction)
 
 function filterFunction() {
-    let input = document.getElementById("searchKey")
-    let text = input.value.toLocaleLowerCase().trim();
-    let list = document.querySelector("#filterList")
+    const input = document.getElementById("searchKey")
+    const text = input.value.toLocaleLowerCase().trim();
+    const list = document.querySelector("#filterList")
     list.innerHTML=""
     console.log(text)
 
@@ -19,7 +19,7 @@ function filterFunction() {
         list.setAttribute("style", "display:inline-block;")
 
         for( let i= 0 ; i < filterArr.length ; i++) {
-                let li = document.createElement("li");
+                const li = document.createElement("li");
                 li.innerText = filterArr[i];
                 li.addEventListener("click", () => {
                     input.value = li.innerHTML.toString()

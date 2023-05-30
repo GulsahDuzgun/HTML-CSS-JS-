@@ -173,20 +173,25 @@ ul {
     margin:0px;
     padding: 0px;
     justify-content: start;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 100%;
     z-index: 4;
     position: absolute;
     top:50px;
     left: 0px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #filterList li {
     display: block;
     padding: 8px 10px;
     margin: 10px auto 0px auto;
-    border-radius: 20px;
     box-sizing: border-box;
-    background-color: white;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     
+}
+
+#filterList li:hover {
+    background-color: #dddddd;
 }
