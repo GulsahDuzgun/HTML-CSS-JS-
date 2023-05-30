@@ -99,6 +99,10 @@ ul {
     bottom: 10px;
 }
 
+#searchKey:focus {
+    outline:none;
+}
+
 .commonInteractions {
     display: flex;
     flex-direction: row;
