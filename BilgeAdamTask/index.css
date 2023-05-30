@@ -235,17 +235,18 @@ ul {
     margin: 10% auto;
     padding: 15px;
     border: 1px solid #888888;
-    width:30%;
+    width:40%;
     font-weight: 500;
-    flex-direction: row;
+    flex-direction:row;
     background-color: white;
-
 }
 
 .popup-content div {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    margin: 0px;
+    padding: 0px;
 }
 
 .popup-content button {
@@ -256,14 +257,93 @@ ul {
     border: none;
 }
 
-.popup-content hr {
-    margin: 10px 0px;
-}
-
-.popup-content p {
-    font-size: 16px;
-}
-
 .show {
     display: flex;
+}
+
+.formClass form {
+    width: 500px;
+    margin: 0px;
+	padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.formClass label {
+    display: flex;
+    width: 100%;
+	margin: 0px 0px 15px 0px;
+}
+
+.formClass label span {
+    width: 80px;
+	font-weight: bold;
+	float: left;
+	padding-right: 2px;
+}
+
+.formClass span.required {
+    color:red;
+    padding: 1px 0px;
+} 
+
+.formClass .telNo {
+    width: 40px;
+	text-align: center;
+}
+
+.formClass textarea {
+    height:auto;
+	width: 500px;
+
+}
+
+.formClass input {
+    width: 70%;
+    box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+
+.formClass textarea {
+    padding: 0px;
+    width: 70%;
+    box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	outline: none;
+}
+
+.formClass input.btn {
+    border: none;
+	padding: 8px 15px 8px 15px;
+	background: rgb(8, 94, 8);
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;	
+}
+
+.formClass h2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.formClass label:last-child {
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+    padding: 0px;
+    border: none;
+}
+
+.formClass .btn:hover {
+    background: #11a015;
+	color: #fff;
 }

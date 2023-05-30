@@ -8,13 +8,49 @@ document.querySelector('#searchKey').addEventListener('input', filterFunction)
 const reqBtn = document.querySelector('#reqNotification')
 const reportBtn = document.querySelector('#reportBtn')
 const recordBtn = document.querySelector('#recordBtn')
-const myPopup = document.querySelector('#myPopup')
+const myPopup = document.querySelector('.form')
 const closePopup = document.querySelector('#closePopup')
-const message = document.querySelector('#message')
+const form = `
+    <div class="popup-content">
+        <div>
+            <button id="closePopup">&#x2715</button>
+        </div>
+        <div class="formClass">
+            <form action="">
+                    <h2 id="headerText"></h2>
+                    <label for="name">
+                        <span>Full Name</span><span class="required">*</span>
+                        <input type="text" class="nameInput" id="name" name="name">
+                    </label>
+                    <label for="lastName"><span>Lastname</span><span class="required">*</span>
+                        <input type="text" class="lastNameInput" id="lastName" name="lastName">
+                    </label>
+                    <label for="email"><span>Email</span><span class="required">*</span>
+                        <input type="email" class="email" id="email" name="email">
+                    </label>
+                    <label for="telNo"><span>Telefon Numaranız</span><span class="required">*</span>
+                        <input type="text" class="telNumber" id="telNo" name="telNo" maxlength="12"/>
+                    </label>
+                    <label for="message">
+                        <span id="messageTitle"></span>
+                        <span class="required">*</span>
+                        <textarea type="text" class="message" id="message" name="message"></textarea>
+                    </label>
+                    <label><input class="btn" type="submit" value="Submit" /></label>
+                </form>
+        </div>
+    </div>
+        
+`
 
 reqBtn.addEventListener("click", function() {
-    message.innerHTML = "İstek bildirme işleminiz yapılıyor"
+    document.body.innerHTML = form
+    const message = document.querySelector('#messageTitle')
+    const headerText = document.querySelector('#headerText')
+    message.innerHTML = "İstek Mesajınız"
+    headerText.innerHTML= "İstek Bildir"
     myPopup.classList.add("show")
+
 })
 
 reportBtn.addEventListener("click", function() {
