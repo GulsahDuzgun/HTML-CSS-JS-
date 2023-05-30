@@ -5,6 +5,31 @@ const arr = ["Adana", "Adıyaman", "Afyonkarahisar", "Ağrı", "Amasya", "Ankara
 let filterArr = [];
 
 document.querySelector('#searchKey').addEventListener('input', filterFunction)
+const reqBtn = document.querySelector('#reqNotification')
+const reportBtn = document.querySelector('#reportBtn')
+const recordBtn = document.querySelector('#recordBtn')
+const myPopup = document.querySelector('#myPopup')
+const closePopup = document.querySelector('#closePopup')
+const message = document.querySelector('#message')
+
+reqBtn.addEventListener("click", function() {
+    message.innerHTML = "İstek bildirme işleminiz yapılıyor"
+    myPopup.classList.add("show")
+})
+
+reportBtn.addEventListener("click", function() {
+    message.innerHTML = "Sorun bildirme işleminiz yapılıyor"
+    myPopup.classList.add("show")
+})
+
+recordBtn.addEventListener("click", function() {
+    message.innerHTML = "Kayıtları gösterme işleminiz yapılıyor"
+    myPopup.classList.add("show")
+})
+
+closePopup.addEventListener('click', function() {
+    myPopup.classList.remove("show")
+})
 
 function filterFunction() {
     const input = document.getElementById("searchKey")

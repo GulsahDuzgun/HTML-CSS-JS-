@@ -30,6 +30,15 @@
         </ul>
     </div>
     <div class="main">
+        <div id="myPopup" class="popup">
+            <div class="popup-content">
+                <div>
+                    <button id="closePopup">X</button>
+                </div>
+                <h3>Lütfen Bekleyiniz</h3><hr>
+                <p id="message">İşleminiz yapılıyor</p>
+            </div>
+        </div>
         <div class="interactions">
             <h1 class="title">Size Nasıl Yardımcı Olabiliriz ?</h1>
             <div class="inputSection">
@@ -37,9 +46,10 @@
                 <ul id="filterList"></ul>
             </div>
             <div class="commonInteractions">
-                <a href="http://127.0.0.1:5501/BilgeAdamTask/requestNotification" target="_top"><button class="requestNotification"><i class="bi bi-clipboard-check"></i>İstek Bildir</button></a>
-                <a href="http://127.0.0.1:5501/BilgeAdamTask/reportProblem" target="_top"><button class="reportProblem"><i class="bi bi-clipboard-x"></i>Sorun Bildir</button></a>
-                <a href="http://127.0.0.1:5501/BilgeAdamTask/allRecords" target="_top"><button class="allRecords"><i class="bi bi-files"></i>Tüm  Kayıtlarım</button><a>
+                <button id="reqNotification" class="requestNotification"><i class="bi bi-clipboard-check"></i>İstek Bildir</button>
+                <button id="reportBtn" class="reportProblem"><i class="bi bi-clipboard-x"></i>Sorun Bildir</button>
+                <button id="recordBtn" class="allRecords"><i class="bi bi-files"></i>Tüm  Kayıtlarım</button>
+                
             </div>
             <div class="announcement">
                 <h3>Duyurular</h3>
