@@ -36,7 +36,7 @@ form.innerHTML = `
                         <label for="message">
                             <span id="messageTitle"></span>
                             <span class="required">*</span>
-                            <textarea type="text" class="message" id="message" name="message"></textarea>
+                            <textarea type="text" class="message" id="message" name="message" placeholder=" Mesajınız..."></textarea>
                         </label>
                     </div>
                     <div class="btnContainer"><input class="btn" type="btn" value="Submit" onClick="recordData()"/></div>
@@ -84,7 +84,6 @@ recordBtn.addEventListener("click", function() {
 
 
 function filterFunction() {
-
     const input = document.getElementById("searchKey")
     const text = input.value.toLocaleLowerCase().trim();
     const list = document.querySelector("#filterList")
