@@ -8,10 +8,11 @@ document.querySelector('#searchKey').addEventListener('input', filterFunction)
 const reqBtn = document.querySelector('#reqNotification')
 const reportBtn = document.querySelector('#reportBtn')
 const recordBtn = document.querySelector('#recordBtn')
-const myPopup = document.querySelector('.form')
-const closePopup = document.querySelector('#closePopup')
-const form = `
-    <div class="popup-content">
+const formTemplate = document.getElementById("myPopup") 
+
+const form = document.createElement('div')
+form.innerHTML = `
+    <div class="popup-content" id="popup-content">
         <div>
             <button id="closePopup">&#x2715</button>
         </div>
@@ -44,18 +45,33 @@ const form = `
 `
 
 reqBtn.addEventListener("click", function() {
-    document.body.innerHTML = form
+    formTemplate.appendChild(form)
+    formTemplate.classList.add("show")
     const message = document.querySelector('#messageTitle')
     const headerText = document.querySelector('#headerText')
-    message.innerHTML = "İstek Mesajınız"
-    headerText.innerHTML= "İstek Bildir"
-    myPopup.classList.add("show")
+    const closePopup = document.querySelector('#closePopup')
 
+    message.innerHTML = "İstek Mesajınız"
+    headerText.innerHTML= "İstek Bildiriniz"
+
+    closePopup.addEventListener('click', function() {
+        formTemplate.style.display = "none"
+    })
 })
 
 reportBtn.addEventListener("click", function() {
-    message.innerHTML = "Sorun bildirme işleminiz yapılıyor"
-    myPopup.classList.add("show")
+    formTemplate.appendChild(form)
+    formTemplate.classList.add("show")
+    const message = document.querySelector('#messageTitle')
+    const headerText = document.querySelector('#headerText')
+    const closePopup = document.querySelector('#closePopup')
+
+    message.innerHTML = "Sorun Bildir"
+    headerText.innerHTML = "Sorununuzu Açıklayınız"
+
+    closePopup.addEventListener('click', function() {
+        formTemplate.style.display = "none"
+    })
 })
 
 recordBtn.addEventListener("click", function() {
@@ -63,11 +79,9 @@ recordBtn.addEventListener("click", function() {
     myPopup.classList.add("show")
 })
 
-closePopup.addEventListener('click', function() {
-    myPopup.classList.remove("show")
-})
 
 function filterFunction() {
+
     const input = document.getElementById("searchKey")
     const text = input.value.toLocaleLowerCase().trim();
     const list = document.querySelector("#filterList")
@@ -86,11 +100,9 @@ function filterFunction() {
                     input.value = li.innerHTML.toString()
                     list.innerHTML="";
                 })
-
                 list.appendChild(li)
             }
-    }
-    
+    }  
     else {
         list.setAttribute("style", "display:none")
     }
