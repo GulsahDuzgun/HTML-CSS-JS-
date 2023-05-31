@@ -91,7 +91,7 @@ function filterFunction() {
     console.log(text)
 
     if(!!text) {
-        filterArr = arr.filter(i => i.toLocaleLowerCase().includes(text) !== false )
+        filterArr = arr.filter(i => i.toLocaleLowerCase().substring(0,text.length) === text.toLocaleLowerCase() )
         console.log(filterArr)
         list.setAttribute("style", "display:inline-block;")
 
@@ -108,11 +108,4 @@ function filterFunction() {
     else {
         list.setAttribute("style", "display:none")
     }
-}
-
-function recordData(){  
-    let arr = Array.from(document.querySelectorAll('.containerInput input')).reduce((acc, input) => ({
-        ...acc, [input.id]:input.value}),{})
-    console.log(arr)
-    document.querySelector('#formHtml').submit()
 }

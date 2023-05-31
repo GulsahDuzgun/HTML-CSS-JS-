@@ -183,7 +183,7 @@ ul {
     justify-content: start;
     border-radius: 10px;
     width: 100%;
-    height: 300px;
+    height: auto;
     z-index: 3;
     position: absolute;
     overflow-y:scroll;
@@ -234,6 +234,7 @@ ul {
     overflow: auto;
     display: none;
     justify-content: center;
+    
 }
 
 .popup-content {
@@ -244,6 +245,8 @@ ul {
     font-weight: 500;
     flex-direction:row;
     background-color: white;
+    border-radius: 10px;
+
 }
 
 .popup-content div {
