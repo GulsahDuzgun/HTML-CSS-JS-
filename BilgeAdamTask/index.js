@@ -17,27 +17,29 @@ form.innerHTML = `
             <button id="closePopup">&#x2715</button>
         </div>
         <div class="formClass">
-            <form action="">
+            <form action="" id="formHtml" >
                     <h2 id="headerText"></h2>
-                    <label for="name">
-                        <span>Full Name</span><span class="required">*</span>
-                        <input type="text" class="nameInput" id="name" name="name">
-                    </label>
-                    <label for="lastName"><span>Lastname</span><span class="required">*</span>
-                        <input type="text" class="lastNameInput" id="lastName" name="lastName">
-                    </label>
-                    <label for="email"><span>Email</span><span class="required">*</span>
-                        <input type="email" class="email" id="email" name="email">
-                    </label>
-                    <label for="telNo"><span>Telefon Numaranız</span><span class="required">*</span>
-                        <input type="text" class="telNumber" id="telNo" name="telNo" maxlength="12"/>
-                    </label>
-                    <label for="message">
-                        <span id="messageTitle"></span>
-                        <span class="required">*</span>
-                        <textarea type="text" class="message" id="message" name="message"></textarea>
-                    </label>
-                    <label><input class="btn" type="submit" value="Submit" /></label>
+                    <div class="containerInput">
+                        <label for="name">
+                            <span>Full Name</span><span class="required">*</span>
+                            <input type="text" class="nameInput" id="name" name="name">
+                        </label>
+                        <label for="lastName"><span>Lastname</span><span class="required">*</span>
+                            <input type="text" class="lastNameInput" id="lastName" name="lastName">
+                        </label>
+                        <label for="email"><span>Email</span><span class="required">*</span>
+                            <input type="email" class="email" id="email" name="email">
+                        </label>
+                        <label for="telNo"><span>Telefon Numaranız</span><span class="required">*</span>
+                            <input type="text" class="telNumber" id="telNo" name="telNo" maxlength="12"/>
+                        </label>
+                        <label for="message">
+                            <span id="messageTitle"></span>
+                            <span class="required">*</span>
+                            <textarea type="text" class="message" id="message" name="message"></textarea>
+                        </label>
+                    </div>
+                    <div class="btnContainer"><input class="btn" type="btn" value="Submit" onClick="recordData()"/></div>
                 </form>
         </div>
     </div>
@@ -55,7 +57,7 @@ reqBtn.addEventListener("click", function() {
     headerText.innerHTML= "İstek Bildiriniz"
 
     closePopup.addEventListener('click', function() {
-        formTemplate.style.display = "none"
+        formTemplate.classList.remove("show")
     })
 })
 
@@ -70,7 +72,8 @@ reportBtn.addEventListener("click", function() {
     headerText.innerHTML = "Sorununuzu Açıklayınız"
 
     closePopup.addEventListener('click', function() {
-        formTemplate.style.display = "none"
+        formTemplate.classList.remove("show")
+
     })
 })
 
@@ -108,3 +111,9 @@ function filterFunction() {
     }
 }
 
+function recordData(){  
+    let arr = Array.from(document.querySelectorAll('.containerInput input')).reduce((acc, input) => ({
+        ...acc, [input.id]:input.value}),{})
+    console.log(arr)
+    document.querySelector('#formHtml').submit()
+}

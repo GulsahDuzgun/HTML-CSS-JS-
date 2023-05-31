@@ -337,15 +337,30 @@ ul {
     margin: 20px auto;
 }
 
-.formClass label:last-child {
+.formClass .btn{
     display: flex;
-    justify-content: end;
-    margin-top: 5px;
+    justify-content: center;
+    margin-top: 15px auto;
     padding: 0px;
     border: none;
+    text-align: center;
 }
 
 .formClass .btn:hover {
     background: #11a015;
 	color: #fff;
+}
+
+.containerInput {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center !important;
+    margin-top: 10px;
 }
