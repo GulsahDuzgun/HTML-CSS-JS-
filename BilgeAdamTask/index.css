@@ -372,3 +372,9 @@ ul {
     justify-content: center !important;
     margin-top: 10px;
 }
+
+#messageType {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}

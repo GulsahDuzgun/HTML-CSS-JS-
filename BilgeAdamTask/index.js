@@ -22,16 +22,13 @@ form.innerHTML = `
                     <div class="containerInput">
                         <label for="name">
                             <span>Full Name</span><span class="required">*</span>
-                            <input type="text" class="nameInput" id="name" name="name">
-                        </label>
-                        <label for="lastName"><span>Lastname</span><span class="required">*</span>
-                            <input type="text" class="lastNameInput" id="lastName" name="lastName">
+                            <input type="text" class="nameInput" id="name" name="full_name">
                         </label>
                         <label for="email"><span>Email</span><span class="required">*</span>
                             <input type="email" class="email" id="email" name="email">
                         </label>
                         <label for="telNo"><span>Telefon Numaranız</span><span class="required">*</span>
-                            <input type="text" class="telNumber" id="telNo" name="telNo" maxlength="12"/>
+                            <input type="text" class="telNumber" id="telNo" name="phone" maxlength="12"/>
                         </label>
                         <label for="message">
                             <span id="messageTitle"></span>
@@ -39,7 +36,8 @@ form.innerHTML = `
                             <textarea type="text" class="message" id="message" name="message" placeholder=" Mesajınız..."></textarea>
                         </label>
                     </div>
-                    <div class="btnContainer"><input class="btn" type="btn" value="Submit" onClick="recordData()"/></div>
+                    <input type="number" class="messageType" id="messageType" name="message_type">
+                    <div class="btnContainer"><input class="btn btnSubmit" type="submit" value="Submit" onClick="recordData()"/></div>
                 </form>
         </div>
     </div>
@@ -52,11 +50,34 @@ reqBtn.addEventListener("click", function() {
     const message = document.querySelector('#messageTitle')
     const headerText = document.querySelector('#headerText')
     const closePopup = document.querySelector('#closePopup')
+    const submitBtn = document.querySelector(".btnSubmit")
+    const formElement = document.querySelector("form")
+    const messageType = document.querySelector("#messageType")
 
     message.innerHTML = "İstek Mesajınız"
     headerText.innerHTML= "İstek Bildiriniz"
+    messageType.value = 0
 
     closePopup.addEventListener('click', function() {
+        formTemplate.classList.remove("show")
+    })
+
+    submitBtn.addEventListener("click",() => {
+        formElement.method = "POST"
+        var formData = Array.from(document.querySelectorAll("#formHtml input")).reduce((acc, input) => 
+        ({...acc,[input.name] : input.value}), {});
+        console.log(formData)
+
+        fetch("http://127.0.0.1:5500/message",{
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+              method: "POST",
+              body:formData
+        })
+
+        formElement.onsubmit()
         formTemplate.classList.remove("show")
     })
 })
@@ -77,12 +98,6 @@ reportBtn.addEventListener("click", function() {
     })
 })
 
-recordBtn.addEventListener("click", function() {
-    message.innerHTML = "Kayıtları gösterme işleminiz yapılıyor"
-    myPopup.classList.add("show")
-})
-
-
 function filterFunction() {
     const input = document.getElementById("searchKey")
     const text = input.value.toLocaleLowerCase().trim();
@@ -91,7 +106,7 @@ function filterFunction() {
     console.log(text)
 
     if(!!text) {
-        filterArr = arr.filter(i => i.toLocaleLowerCase().substring(0,text.length) === text.toLocaleLowerCase() )
+        filterArr = arr.filter(i => i.toLocaleLowerCase().substring(0,text.length) === text.toLowerCase() )
         console.log(filterArr)
         list.setAttribute("style", "display:inline-block;")
 
