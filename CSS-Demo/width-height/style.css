@@ -1,0 +1,16 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    background-color: rebeccapurple;
+    width: 50%;
+    height: 50%;
+}
+
+span {
+    background-color: lime;
+    width: 50%;
+    height: 600px;
+}
