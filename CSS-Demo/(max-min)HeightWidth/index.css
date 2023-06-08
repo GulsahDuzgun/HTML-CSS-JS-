@@ -1,0 +1,6 @@
+div {
+    max-height: 100px;
+    max-width: 20%;
+    min-width: 350px;
+    background-color:violet;
+}
