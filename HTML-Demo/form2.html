@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="" id="form1">
+        <fieldset>
+            <legend>Girilş Yap</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name"  name="userName" autocomplete="off">
+            <label for="password"></label>
+            <input type="password" id="password" name="password"><br>
+            <input type="file" name="file[]" id="" multiple><br>
+            <button type="button" formaction="a.html" formtarget="_blank" formenctype="multipart/form-data">GET</button>
+            <button type="submit" formaction="b.html" formtarget="_self" formmethod="post" >POST</button>
+        </fieldset>
+    </form>
+    <br>
+    <input list="listLang" id="list" name="codeLanguage" form="form1">
+    <datalist id="listLang">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JS" checked>
+    </datalist>
+    <br><br>
+    <select name="softwareLanguage[]" multiple id="" size="8" form="form1">
+        <optgroup label="Front-End">
+            <option value="HTML">HTML</option>
+            <option value="CSS" selected>CSS</option>
+            <option value="JS">JS</option>
+        </optgroup>
+        <optgroup label="Back-End Dilleri">
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+            <option value="Python">Phyton</option>
+        </optgroup>
+    </select>
+
+    <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+
+</body>
+</html>
