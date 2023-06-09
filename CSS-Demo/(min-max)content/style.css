@@ -1,0 +1,22 @@
+.box1 {
+    background-color: yellow;
+    width: min-content;
+}
+
+.box2 {
+    background-color: lime;
+    width: max-content;
+}
+
+.box3 {
+    background-color: tomato;
+    writing-mode: vertical-lr;
+    height: max-content;
+}
+
+.box4 {
+    background-color: rebeccapurple;
+    writing-mode: vertical-lr;
+    height: min-content;
+
+}
