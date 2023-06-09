@@ -1,0 +1,17 @@
+.box1 {
+    background-color: teal;
+    width: 100px;
+    height:100px;
+    margin: 20px auto;
+    border: 10px groove lightseagreen;
+    padding: 40px;
+    box-sizing:border-box
+}
+
+.box2 {
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+
+}
