@@ -1,0 +1,21 @@
+#box1 {
+    background-color: lightgreen;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    border:10px dashed black;
+    outline: 5px rebeccapurple dotted;
+    outline-offset: 50px;
+}
+
+.box2 {
+    background-color: lightgreen;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    border: 10px groove black;
+    outline-color:red;
+    outline-width: 5px;
+    outline-style: double;
+    outline-offset: 50px;
+}
