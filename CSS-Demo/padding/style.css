@@ -1,0 +1,19 @@
+.box1 {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+.box2 {
+    background-color: violet;
+    width: 100px;
+    height: 150px;
+    /*padding: 25px 50px ;*/
+    padding: 25px 50px 25px;
+
+}
+
+span {
+    background-color: lime;
+    padding: 100px 70px;
+}
