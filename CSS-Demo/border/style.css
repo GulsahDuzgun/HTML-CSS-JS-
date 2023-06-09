@@ -1,0 +1,29 @@
+div {
+    background-color: rgb(204, 182, 204);
+    width: 200px;
+    height: 200px;
+    margin: 30px 0px;
+    border-top-style: dotted;
+    border-left-style: dashed;
+    border-bottom-style: double;
+    border-right-style: groove;
+    border-color:red blue rebeccapurple;
+    border-width: 2px 10px 5px 5px;
+}
+
+span {
+    background-color: cadetblue;
+    padding: 10px;
+    border-top: 40px dashed pink;
+}
+
+input {
+    border: 15px solid black;
+}
+
+input:focus {
+    border-top:5px solid green;
+    border-left: 10px dashed red;
+    border-bottom: 8px groove goldenrod;
+    border-right: 4px double chartreuse;
+}
