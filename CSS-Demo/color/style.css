@@ -1,0 +1,14 @@
+body {
+    color: violet;
+}
+
+.colorBox {
+    color: rgba(27, 12, 19, 0.99);
+}
+
+p {
+    color:hsla(34, 83%, 29%, 0.4)
+}
+span {
+    color: #148a05;
+}
