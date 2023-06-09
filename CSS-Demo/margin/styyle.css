@@ -1,0 +1,20 @@
+.box1 {
+    background-color: teal;
+    width: 200px;
+    margin: 0px 100px 10px;
+}
+
+.box2 {
+    background-color: tomato;
+    width: 300px;
+}
+
+.span1 {
+    background-color: aqua;
+    margin: 20px 50px 50px 50px ;
+}
+
+.span2 {
+    background-color: lime;
+    margin: 100px 120px 0px;
+}
