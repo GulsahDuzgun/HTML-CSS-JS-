@@ -1,0 +1,34 @@
+.box1 {
+    width:100px;
+    height: 100px;
+    background-color: firebrick;
+    border-radius:10px 20px 30px 40px ;
+}
+
+.box2 {
+    width:100px;
+    height: 100px;
+    background-color: firebrick;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 150px 5px;
+}
+
+.box3 {
+    width:100px;
+    height: 100px;
+    background-color: firebrick;
+    border-radius: 100px;
+}
+
+.box4 {
+    width:100px;
+    height: 100px;
+    background-color: firebrick;
+    border-radius: 50%;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 200px;
+}
