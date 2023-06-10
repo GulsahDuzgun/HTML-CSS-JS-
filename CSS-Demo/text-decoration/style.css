@@ -1,0 +1,17 @@
+div {
+    text-decoration-line:line-through;
+    text-decoration-color: rebeccapurple;
+    text-decoration-style: wavy;
+}
+
+div:last-of-type {
+    text-decoration: none;
+}
+
+h3 span {
+    text-decoration: underline overline dashed tomato;
+}
+
+h3 {
+    text-decoration:underline line-through dotted teal;
+}
