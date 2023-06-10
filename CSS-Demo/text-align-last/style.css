@@ -1,0 +1,8 @@
+p::first-line {
+    text-align: left;
+}
+
+div {
+    text-align: right;
+    text-align-last: justify;
+}
