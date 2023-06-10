@@ -1,0 +1,12 @@
+body {
+    word-spacing: -10px;
+}
+
+div {
+    word-spacing: normal;
+}
+
+span {
+    letter-spacing: 1rem;
+    word-spacing: 10px;
+}
