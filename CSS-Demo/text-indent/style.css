@@ -1,0 +1,21 @@
+p:first-child {
+    text-indent: 20px;
+}
+
+p {
+    text-indent: -30px;
+}
+
+p:last-of-type {
+    text-indent: 30px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 1em;
+    background-color: khaki;
+    text-align:center;
+    line-height: 50px;
+    text-indent:-9999px
+}
