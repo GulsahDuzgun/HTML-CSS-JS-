@@ -1,0 +1,11 @@
+p {
+    white-space: nowrap;
+}
+
+div:last-of-type {
+    white-space: pre;
+}
+
+p:last-of-type {
+    white-space: pre-line;
+}
