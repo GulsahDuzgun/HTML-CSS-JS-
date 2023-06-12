@@ -1,0 +1,36 @@
+.box1 {
+    height: 150px;
+    width: 300px;
+    background-color: limegreen;
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 10px black dashed;
+    color:transparent;
+    background-clip:content-box;
+
+}
+
+.box2 {
+    height: 150px;
+    width: 300px;
+    padding: 20px;
+    background-color: lightseagreen;
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-clip:content-box;
+    border: 10px dotted black;
+    -webkit-background-clip: text;
+    color:transparent;
+    background-image: url("../images/images.png");
+    background-position: top center;
+
+}
