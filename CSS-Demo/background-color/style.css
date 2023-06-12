@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+
+div {
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    border: 10px solid;
+}
+
+div:last-of-type {
+    /* background-color: unset; */
+    background-color: transparent;
+}
+
