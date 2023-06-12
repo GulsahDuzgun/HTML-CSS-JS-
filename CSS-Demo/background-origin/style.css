@@ -1,0 +1,10 @@
+div {
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    background-image: url("../images/images.png"), url("../images//iceberg.jpg");
+    border: 10px dashed black;
+    background-repeat: no-repeat, no-repeat;
+    background-origin:content-box border-box ;
+    text-align: center;
+}
