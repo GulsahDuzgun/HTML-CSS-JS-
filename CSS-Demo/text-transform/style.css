@@ -1,0 +1,15 @@
+p {
+    text-transform: capitalize;
+}
+
+p:last-of-type {
+    text-transform: uppercase;
+}
+
+p:nth-child(3) {
+    text-transform:lowercase
+}
+
+p:nth-child(2) {
+    text-transform: none;
+}
