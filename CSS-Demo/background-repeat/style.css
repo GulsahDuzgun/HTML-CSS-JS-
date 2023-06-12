@@ -1,0 +1,9 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("../images/download.jpg"), url("../images/iceberg.jpg"), url("../images/images.png");
+    background-repeat: no-repeat, space, round;
+}
