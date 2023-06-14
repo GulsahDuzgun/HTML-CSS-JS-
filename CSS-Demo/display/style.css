@@ -11,33 +11,27 @@ table {
 }
 
 .table {
-    box-sizing: border-box;
+    display: table;
+    width: 100%;
     margin-top: 20px;
-    border: 1px solid black;
-    width: 80%;
-    box-sizing: border-box;
-    text-align: center;
-    display: none;
+    border: 1px solid gray;
+    border-spacing: 5px;
+    border-collapse: separate;
 }
 
-.thead, .tbody {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+.thead {
+    display: table-header-group;
+}
+
+.tbody {
+    display: table-row-group;
 }
 
 .tr {
-    display: inline;
-    margin: 0px auto;
-    padding: 0px;
-    box-sizing: border-box;
-    text-align: center;
+    display: table-row;
 }
 
-.td{
-    display: inline-block;
-    width:48%;
-    border: 1px solid black;
-    margin: 0px auto;
-    padding: 0px;
+.td {
+    display: table-cell;
+    border: 1px solid gray;
 }
