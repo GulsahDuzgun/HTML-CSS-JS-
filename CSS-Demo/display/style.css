@@ -1,0 +1,14 @@
+div {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background-color: firebrick;
+}
+
+span {
+    display: block;
+    background-color: rebeccapurple;
+    width: 100px;
+    height: 100px;
+}
