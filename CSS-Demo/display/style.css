@@ -1,14 +1,41 @@
-div {
-    display: inline;
-    width: 100px;
-    height: 100px;
-    padding: 30px;
-    background-color: firebrick;
-}
-
 span {
     display: block;
     background-color: rebeccapurple;
     width: 100px;
     height: 100px;
+}
+
+table {
+    width: 70%;
+}
+
+.table {
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.thead, .tbody {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.tr {
+    display: inline;
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.td{
+    display: inline-block;
+    width:48%;
+    border: 1px solid black;
+    margin: 0px auto;
+    padding: 0px;
 }
