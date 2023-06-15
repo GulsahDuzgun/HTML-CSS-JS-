@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    height: 1000px;
 }
 
 .container {
@@ -43,4 +44,24 @@ p {
     margin: 0px;
     padding: 0px;
     position: relative;
+    z-index: 3;
+}
+
+a {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.text {
+    height: 700px;
+
+}
+
+h3 {
+    background-color: tomato;
+    color:white;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
 }
