@@ -1,0 +1,15 @@
+.column {
+    columns: 3 300px;
+    column-rule-color: #ccc;
+    column-rule-style: solid;
+    column-rule-width: 3px;
+    column-gap: 30px;
+    line-height: 150%;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.column h3 {
+    column-span:all;
+}
