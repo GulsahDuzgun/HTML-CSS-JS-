@@ -65,3 +65,61 @@ h3 {
     position: sticky;
     top: 0px;
 }
+
+.checkLabel .checkBg {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    margin: 50px 0px;
+    background-color: #ddd;
+    border-radius: 40px;
+}
+
+.checkLabel input {
+    display: none;
+}
+
+.checkLabel .circle {
+    display: block;
+    background-color: tomato;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+}
+
+.checkLabel input:checked + .checkBg .circle {
+     background-color: #ddd;
+     right: 5px;
+     left: auto;
+     transition: 500ms left, 500ms background-color;
+}
+
+.checkLabel input:checked + .checkBg {
+    background-color: tomato;
+    transition: 500ms background-color;
+}
+
+.popup {
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+}
+
+.popup .popup-inner {
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left:-250px;
+}
