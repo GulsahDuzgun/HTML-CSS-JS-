@@ -1,10 +1,37 @@
 p {
     background-color: lightblue;
 }
+
 .box {
     width: 100px;
     height: 100px;
-    background-color: #ddd;
+    background-color: unset;
     overflow: scroll;
-    overflow-x: hidden;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.box::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-radius: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box::-webkit-scrollbar-corner {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.box::-webkit-scrollbar-thumb {
+    width: 2px;
+    height: 2px;
+    background-color: #ddd;
+    border-radius: 40px;
+}
+
+.box::-webkit-scrollbar:hover {
+    border: 2px solid #ccc;
 }
