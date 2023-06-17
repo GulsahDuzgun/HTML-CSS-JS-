@@ -1,23 +1,29 @@
 html, body {
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 a {
     text-decoration: none;
 }
 
-nav a {
-    line-height: 50px;
-    padding: 0px 20px;
-    color: #fff;
+body {
+    padding-top: 50px;
 }
 
 nav {
     background-color: rebeccapurple;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0px;
+}
+
+nav a {
+    line-height: 50px;
+    padding: 0px 20px;
+    color: #fff;
 }
 
 section {
