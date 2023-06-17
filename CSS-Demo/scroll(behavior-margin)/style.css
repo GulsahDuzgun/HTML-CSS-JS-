@@ -26,6 +26,11 @@ nav a {
     color: #fff;
 }
 
+nav a.active {
+    padding-bottom: 17px;
+    box-shadow: 0 -4px 0 0 #fff inset;
+}
+
 section {
     height: calc(100vh - 50px);
     scroll-margin-top: 50px;
