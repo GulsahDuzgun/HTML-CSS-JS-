@@ -1,0 +1,52 @@
+html, body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    line-height: 50px;
+    padding: 0px 20px;
+    color: #fff;
+}
+
+nav {
+    background-color: rebeccapurple;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+}
+
+section {
+    height: calc(100vh - 50px);
+    scroll-margin-top: 50px;
+}
+
+section#home {
+    background-color: lightblue;
+}
+
+section#about {
+    background-color: yellow;
+}
+
+section#blog {
+    background-color: firebrick;
+}
+
+section#contact {
+    background-color: violet;
+}
+
+.top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: black;
+    padding: 5px 20px;
+    color: white;
+    cursor: pointer;
+}
