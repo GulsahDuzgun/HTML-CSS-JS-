@@ -3,12 +3,18 @@
     padding: 0px;
 }
 
+html, body {
+    height: 100%;
+}
+
 .container {
     background-color: #ccc;
     display:flex;
-    height: 250px;
     width: 800px;
+    height: 100%;
     flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .container .box {
