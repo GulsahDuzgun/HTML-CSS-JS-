@@ -6,4 +6,19 @@
 .container {
     background-color: #ccc;
     display: inline-flex;
+    height: 250px;
+    width: 500px;
+    align-items: stretch;
+}
+
+.container p {
+    background-color: rebeccapurple;
+}
+
+.container h4 {
+    background-color: teal;
+}
+
+.container span {
+    background-color: firebrick;
 }
