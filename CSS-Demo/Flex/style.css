@@ -11,13 +11,12 @@ html, body {
 .container {
     background-color: #ddd;
     display:flex;
-    flex-direction:row;
-    height: 50px;
+    flex-direction:column;
+    height: 600px;
     justify-content: end;
-    align-items: center;
+    align-items: stretch;
 }
 
 .container .box {
-    width: 50px;
     background-color: #fff;
 }
