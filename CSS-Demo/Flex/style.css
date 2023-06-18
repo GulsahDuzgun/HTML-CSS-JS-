@@ -12,13 +12,12 @@ html, body {
     background-color: #ddd;
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
+    height: 50px;
+    justify-content: end;
     align-items: center;
-    height: 40px;
 }
 
-.container input {
-    border-radius: 40px;
-    width: 500px;
+.container .box {
+    width: 50px;
+    background-color: #fff;
 }
-
