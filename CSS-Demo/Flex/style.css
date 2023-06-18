@@ -11,17 +11,14 @@ html, body {
 .container {
     background-color: #ddd;
     display:flex;
-    width: 200px;
-    height: 200px;
-    flex-wrap: wrap-reverse;
-    flex-direction: row;
-
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
 }
 
-.container .box {
-    background-color: #fff;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+.container input {
+    border-radius: 40px;
+    width: 500px;
 }
 
