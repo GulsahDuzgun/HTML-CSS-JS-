@@ -8,16 +8,18 @@
     display: inline-flex;
     background-color: #ddd;
     border: 2px dotted black;
+    height: 600px;
 }
 
 .box {
     width: 100px;
-    height: 100px;
     border-right: 1px solid white;
+    background-color: #ccc;
 }
 
 .container .box:nth-child(1) {
     order:5;
+    align-self:flex-end;
 }
 
 .container .box:nth-child(2) {
@@ -26,6 +28,7 @@
 
 .container .box:nth-child(3) {
     order:2;
+    align-self:flex-start;
 }
 
 .container .box:nth-child(4) {
@@ -34,4 +37,5 @@
 
 .container .box:nth-child(5) {
     order: 4;
+    align-self: center;
 }
