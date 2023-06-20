@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 500px;
+    background-color: #ddd;
+    display: flex;
+
+}
+
+.container .box {
+    background-color: #ccc;
+    flex-grow: 1;
+    border-right: 2px dashed #fff;
+}
+
+.container .box:nth-child(2) {
+    flex-grow: 3;
+}
+
+.container .box:nth-child(5) {
+    flex-grow: 0.5 ;
+}
