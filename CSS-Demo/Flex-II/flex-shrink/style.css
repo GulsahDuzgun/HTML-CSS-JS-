@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: #ddd;
+    display: flex;
+}
+
+.container .box {
+    background-color: #ccc;
+    width: 200px;
+    height: 100px;
+    border-right:2px solid #fff;
+    flex-shrink: 2;
+}
+
+.container .box:nth-child(2) {
+    background-color: firebrick;
+    flex-shrink: 2;
+}
+
+.container .box:nth-child(3) {
+    background-color: green;
+    flex-shrink: 0.5;
+}
