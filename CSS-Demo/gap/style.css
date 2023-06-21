@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 30px;
+    gap: 30px 20px;
+
+}
+
+.container .box {
+    color: white;
+    border: 2px solid gold;
+    width: 100px;
+    height: 50px;
+}
