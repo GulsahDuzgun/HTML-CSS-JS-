@@ -1,0 +1,33 @@
+* {
+    border: 0;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+}
+
+.input {
+    margin: 10px 20px;
+    display: inline-flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input label {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0px 15px;
+    background-color: #eee;
+    font-size: 14px;
+}
+
+.input input {
+    outline: none;
+    padding: 0px 15px;
+    font-size: 14px;
+}
+
+.input:focus-within {
+    border: 2px solid rebeccapurple;
+}
+
