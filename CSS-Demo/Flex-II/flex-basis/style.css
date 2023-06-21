@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .box {
+    width: 100px;
+    background-color: #ccc;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;
+    flex-basis: 100px;
+    writing-mode: vertical-lr;
+}

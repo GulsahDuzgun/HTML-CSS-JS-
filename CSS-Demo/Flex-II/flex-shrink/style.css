@@ -10,10 +10,11 @@
 
 .container .box {
     background-color: #ccc;
+    border-right:2px solid #fff;
     width: 200px;
     height: 100px;
     border-right:2px solid #fff;
-    flex-shrink: 2;
+    flex-shrink: 1;
 }
 
 .container .box:nth-child(2) {
