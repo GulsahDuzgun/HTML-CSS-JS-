@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    width: 1500px;
+    margin: 0px auto;
+}
+
+.box {
+    background-color: #eee;
+    flex-grow: 1;
+    margin: 10px 10px;
+    text-align: center;
+    
+}
