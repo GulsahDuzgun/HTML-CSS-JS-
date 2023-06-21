@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display:flex;
+    background-color: lightgrey;
+}
+
+.container .box {
+    background-color: #fff;
+    border: 2px solid black;
+    flex-basis: 150px;
+    height: 50px;
+}
+
+.container .box:nth-child(2) {
+    background-color: rebeccapurple;
+    color: white;
+    flex: 0 4 50px;
+}
