@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+}
+
+.box {
+ background-color: #eee;
+ display:flex;
+ width: 200px;
+ height: 200px;
+ align-items: center;
+ justify-content: center;
+ margin: 0px auto;
+
+}
