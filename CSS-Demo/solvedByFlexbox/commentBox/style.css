@@ -10,14 +10,15 @@
     flex-direction: column;
     margin: 50px;
     border-radius: 4px;
-    box-shadow: 5px 3px #eee;
+    box-shadow: 3px 1.5px #eee;
+    padding: 20px;
+    width: 500px;
 
 }
 
 .innerBox {
     display: flex;
     flex-direction: column;
-    padding: 20px;
 }
 
 .innerBox div{
@@ -50,15 +51,18 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    column-gap: 20px;
+    margin: 5px -20px -20px;
+    column-gap: 10px;
 }
 
 footer span {
     font-size: smaller;
+    margin-left: 5px;
 }
 
-footer div:nth-child(2) {
-    margin-left: 0px;
-    font-size: 15px;
+footer span:nth-child(4) {
+    margin-left: auto;
+    font-size: 1rem;
 }
+
+
