@@ -1,0 +1,25 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ddd;
+    height: 70px;
+    width: 100%;
+}
+
+main {
+    background-color:#eee
+}
+
+footer { 
+    background-color: #000;
+    color: white;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
