@@ -13,11 +13,14 @@ header {
     background-color: #ddd;
     height: 70px;
     width: 100%;
+    flex-shrink: 0;
 }
 
 main {
     background-color:#eee;
     overflow: auto;
+    flex-grow: 1;
+
 }
 
 footer { 
@@ -25,7 +28,7 @@ footer {
     color: white;
     height: 80px;
     width: 100%;
-    margin-bottom: auto;
+    flex-shrink: 0;
 }
 
 .flex {
