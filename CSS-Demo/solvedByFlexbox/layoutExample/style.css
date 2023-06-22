@@ -80,6 +80,10 @@ main aside {
     width: 150px;
     line-height: 40px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 110px);
+    overflow: auto;
 }
 
 aside hr {
@@ -87,6 +91,22 @@ aside hr {
 }
 
 aside h4 {
+    cursor: pointer;
+}
+
+aside .btnGroup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: auto;
+    flex-grow: 1;
+}
+
+.btnGroup button {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
