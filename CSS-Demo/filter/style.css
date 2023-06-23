@@ -7,7 +7,7 @@ img {
     transition: 1s filter ease;
     filter: invert(1);
 }
-
+    
 img:hover {
     filter:grayscale(60%) ;
 }

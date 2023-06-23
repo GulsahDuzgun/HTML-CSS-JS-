@@ -1,0 +1,32 @@
+ .container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.box1 , .box2 {
+    width: inherit;
+    height: inherit;
+    transition: 1s transform;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.box1 {
+    background-color: firebrick;   
+}
+
+.box2 {
+    background-color: rebeccapurple;
+    transform:rotateY(-180deg);
+
+}
+
+.container:hover .box1 {
+    transform: rotateY(180deg);
+}
+
+.container:hover .box2{
+    transform: rotateY(0);
+}
