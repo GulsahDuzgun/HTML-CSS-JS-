@@ -1,6 +1,11 @@
+html, body {
+    background-color: #fff;
+}
+
 img {
     margin:20px;
     transition: 1s filter ease;
+    filter: invert(1);
 }
 
 img:hover {
@@ -12,5 +17,9 @@ img:nth-child(2) {
 }
 
 img:nth-child(3) {
-    filter: opacity(.7);
+    filter: sepia(0.5);
+}
+
+.dark-mode {
+    filter: invert(1);
 }
