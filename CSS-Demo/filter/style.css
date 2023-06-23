@@ -7,3 +7,7 @@ img {
 img:hover {
     filter: blur(0px);
 }
+
+img:nth-child(2) {
+    filter: brightness(1.22);
+}
