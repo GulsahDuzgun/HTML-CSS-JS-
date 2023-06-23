@@ -73,3 +73,31 @@
 .button:hover::before {
     left: -10px;
 }
+
+.scale {
+    display: inline-flex;
+}
+
+.scaleBox1 {
+    width: 100px;
+    height: 100px;
+    background-color: lime;
+    margin-right: 5px;
+    transition: 1s transform;
+}
+
+.scaleBox1:hover {
+    transform: scale(1.2);
+}
+
+.scaleBox2 {
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    transition: 1s transform;
+
+}
+
+.scaleBox2:hover {
+    transform: scale(0);
+}
