@@ -42,3 +42,34 @@
 .skewBox:hover {
     transform: skew(90deg, 180deg);
 }
+
+.button {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -110%;
+    background-color:#999;
+    width: 105%;
+    height: 100%;
+    z-index: -1;
+    transition: 1s left;
+    transform: skew(10deg);
+}
+
+.button:hover::before {
+    left: -10px;
+}
