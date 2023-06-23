@@ -1,0 +1,9 @@
+img {
+    margin:20px;
+    filter: blur(10px);
+    transition: 1s filter ease;
+}
+
+img:hover {
+    filter: blur(0px);
+}
