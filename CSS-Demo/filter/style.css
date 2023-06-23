@@ -10,3 +10,7 @@ img:hover {
 img:nth-child(2) {
     filter: brightness(1.22) contrast(0.3);
 }
+
+img:nth-child(3) {
+    filter: opacity(.7);
+}
