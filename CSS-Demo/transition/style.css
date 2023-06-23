@@ -11,11 +11,44 @@ a {
     background-color: #eee;
     border-radius: 40px;
     cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay:200ms;
+    transition-timing-function: ease-out;
 }
 
 a:hover {
     background-color: lightgreen;
-    transition-property: background-color;
-    transition-duration: 2s;
-    transition-delay:200ms;
+}
+
+.container div {
+    height: 50px;
+    width: 0px;
+    background-color: #999;
+    margin: 10px;
+    transition: all;
+    transition-duration: 1s;
+    transition-delay: 200ms;
+}
+
+.container:hover div:nth-child(1){
+    background-color: firebrick;
+    width: 100px;
+    transition-duration: 1s;
+    transition-delay: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.container:hover div:nth-child(2){
+    background-color: violet;
+    width: 100px;
+    transition-timing-function: steps(3);
+}
+
+.container:hover div:nth-child(3){
+    background-color: rebeccapurple;
+    width: 100px;
+    transition-delay: 400ms;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(34,-54,4,345);
 }
