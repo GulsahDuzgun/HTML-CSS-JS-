@@ -21,15 +21,17 @@ input {
 }
 
 div.popUp {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 #popUp:checked + div.popUp {
-    display: block;
     width: 100%;
     height: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
+    visibility: visible;
+    opacity: 1;
 }
 
 .popUp-inner {
