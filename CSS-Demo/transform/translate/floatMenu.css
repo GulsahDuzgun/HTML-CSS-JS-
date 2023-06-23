@@ -38,7 +38,9 @@ body,html {
     background-color: black;
     position: fixed;
     top: 0px;
-    right: -200px;
+    right: 0px;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
 }
 
 .floatMenu ul {
@@ -48,14 +50,15 @@ body,html {
     line-height: 40px; 
 }
 
-.floatMenu ul li a{
+.floatMenu ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     padding: 10px 5px;
+    cursor: pointer;
 }
 
 #menu:checked + .floatMenu {
-    right: 0px;
+    transform: translateX(0);
 }
