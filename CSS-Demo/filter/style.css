@@ -1,13 +1,12 @@
 img {
     margin:20px;
-    filter: blur(10px);
     transition: 1s filter ease;
 }
 
 img:hover {
-    filter: blur(0px);
+    filter:grayscale(60%) ;
 }
 
 img:nth-child(2) {
-    filter: brightness(1.22);
+    filter: brightness(1.22) contrast(0.3);
 }
