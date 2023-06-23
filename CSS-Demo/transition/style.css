@@ -34,9 +34,7 @@ a:hover {
 .container:hover div:nth-child(1){
     background-color: firebrick;
     width: 100px;
-    transition-duration: 1s;
-    transition-delay: 500ms;
-    transition-timing-function: ease-out;
+    transition: 1s background-color ease-in-out;
 }
 
 .container:hover div:nth-child(2){
@@ -51,4 +49,21 @@ a:hover {
     transition-delay: 400ms;
     transition-duration: 1s;
     transition-timing-function:cubic-bezier(34,-54,4,345);
+}
+
+.container:hover div:nth-child(3) {
+    background-color: teal;
+    color: black;
+    border-radius: 40px;
+    padding: 10px;
+    transition: 1s background-color ease-in-out, 2s color ease-in, 1.5s border-radious ease-out;
+} 
+
+.container:hover div:nth-child(4) {
+    background-color: thistle;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100px;
+    transition: all 1s ease-in-out;
 }
