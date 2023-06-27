@@ -1,5 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script:wght@700&family=Open+Sans:wght@300;400&family=Poppins:wght@300&family=Titillium+Web:ital,wght@1,300&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
+header {
+    height: 54px;
+    background-color: #fff;
+    display: flex;
+    margin: auto 50px;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #ddd;
+}
+
+header h2 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 20px;
+}
+
+header input {
+    border-radius: 40px;
+    width: 250px;
+    border: 1px solid #999
+}
+
+
