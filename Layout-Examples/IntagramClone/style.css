@@ -50,11 +50,46 @@ main {
     background-color: #eee;
     margin: 0px 200px;
     height: calc(100vh - 54px);
+    flex-direction: column;
     flex-grow: 1;
 }
 
 .container {
     background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.container .storyBox {
+    background-color: #fff;
+    height: 100px;
+    width: 700px;
+    border-radius: 10px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.container .storyItem {
+    width: 100px;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.container img {
+    height: 60px;
+    max-width: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    border: 2px dotted firebrick;
+}
+
+.container p {
+    width: 80px;
+    font-size: 14px;
 }
 
 
