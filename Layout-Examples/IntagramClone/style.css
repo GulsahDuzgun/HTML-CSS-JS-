@@ -244,3 +244,73 @@ p.paleColorText {
     text-decoration: none;
     font-size: 16px;
 }
+
+aside {
+    height: 40%;
+    width: 40%;
+    margin: 100px auto;
+}
+
+aside .userInfo {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+aside .userInfo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    border: 2px solid firebrick;
+}
+
+.userInfo p {
+    cursor: pointer;
+}
+
+.recommended {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 40px;
+    margin: 10px 0px;
+}
+
+.recommended #allRecommend {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.recommendedUsers {
+    display: flex;
+    column-gap: 10px;
+    margin: 8px 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.recommendedUsers img {
+    height: 30px;
+    max-height: 30px;
+    max-width: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.recommendedUsers a {
+    color: blue;
+    text-decoration: solid;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.recommendedUsers h5 {
+    cursor: pointer;
+}
