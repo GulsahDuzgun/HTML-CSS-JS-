@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script:wght@700&family=Open+Sans:wght@300;400&family=Poppins:wght@300&family=Titillium+Web:ital,wght@1,300&display=swap');
-@import "./font.css";
+@import"./commentIconFonts.css";
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
 }
 
 header {
@@ -13,13 +17,14 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid #ddd;
+    border: 2px solid #eee;
     padding: 0px 100px;
 }
 
 header h2 {
     font-family: 'Oleo Script', cursive;
     font-size: 20px;
+    cursor: pointer;
 }
 
 header input {
@@ -43,7 +48,21 @@ header .iconGroup {
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+    cursor: pointer;
+    align-items: center;
 }
+
+header .iconGroup i {
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+header .iconGroup i:nth-child(2) {
+    font-size: 28px;
+}
+
 
 main {
     display: flex;
@@ -55,7 +74,6 @@ main {
 }
 
 .container {
-    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,16 +85,19 @@ main {
     height: 100px;
     width: 700px;
     border-radius: 10px;
-    background-color: #eee;
+    background-color: #fff;
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    border:1px solid #ddd;
+    margin: 20px 0px;
 }
 
 .container .storyItem {
     width: 100px;
     align-self: flex-start;
     text-align: center;
+    cursor: pointer;
 }
 
 .container img {
