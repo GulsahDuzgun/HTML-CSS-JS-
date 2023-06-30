@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 30px 15px;
+}
+
+h4, h3 {
+    margin: 15px 15px;
+}
+
+p {
+    margin: 0px 15px;
+    line-height: 20px;
+}
+
+ol {
+    margin: 0px 25px;
+    list-style:decimal;
+    list-style-position: inside;
+}
+
+ol ul {
+    margin: 5px 20px;
+    list-style-position: inside;
+}
+
+ol ul a {
+text-decoration: none;
+color: black;
+}
+
+ul .textBlue a {
+    text-decoration-line: underline;
+    color: blue;
+}
+
+img {
+    margin: 5px 15px;
+}
