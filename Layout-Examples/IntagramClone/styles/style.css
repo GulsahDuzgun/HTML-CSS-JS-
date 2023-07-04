@@ -17,6 +17,7 @@ body {
 }
 
 aside {
+    height: 100vh;
     padding: 8px 12px 0px;
     border-right: 1px solid rgb(219, 219, 219);
 }
@@ -113,15 +114,15 @@ main {
     height: auto;
     font-size: 14px;
     margin: 0px auto;
-    border: 2px solid rebeccapurple;
     padding-top: 4px;
+    overflow-y: auto;
+
 }
 
 main .container {
     margin-top: 10px;
     margin-right: 64px;
     max-width: 630px;
-    border: 2px dotted firebrick;
     display: flex;
     flex-direction: column;
 }
@@ -131,7 +132,6 @@ main .container {
     height: 117px;
     padding: 16px;
     margin-top: 16px;
-    border: 2px solid violet;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -201,17 +201,24 @@ button .userInfo:hover {
 .postContent {
     max-width: 630px;
     width: 100%;
-    border: 2px dashed blueviolet;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
 .postContent .postLine {
     width: 470px;
     margin-top: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 20px!important;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(219,219,219);
 }
 
 .postLine .postHeader {
@@ -288,15 +295,16 @@ button .userInfo:hover {
     border-radius: 12px;
 }
 
-.postContent .interactions {
-    display: flex;
+.postfooter .interactions {
     margin-top: 4px;
+    display: flex;
+    justify-content: flex-start;
     padding-bottom: 6px;
     column-gap: 1px;
 }
 
 .interactions .interactions_icon {
-    display: block;
+    display: inline-block;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -308,10 +316,10 @@ button .userInfo:hover {
 }
 
 .interactions .interactions_icon i:nth-child(2) {
-    min-width: 35px;
-    min-height: 35px;
-    max-width: 35px;
-    max-height: 35px;   
+    min-width: 36px;
+    min-height: 36px;
+    max-width: 36px;
+    max-height: 36px;   
 }
 
 .interactions .interactions_icon i:nth-child(3) {
@@ -326,13 +334,11 @@ button .userInfo:hover {
 }
 
 .interactions .interactions_icon i:nth-child(4) {
-    min-width: 32px;
-    min-height: 32px;
-    max-width: 32px;
-    max-height: 32px; 
+    min-width: 29px;
+    min-height: 29px;
+    max-width: 29px;
+    max-height: 29px; 
 }
-
-
 
 .interactions .interactions_icon img {
     min-width: 38px;
@@ -341,3 +347,52 @@ button .userInfo:hover {
     max-height: 38px;
 }
 
+.postfooter .favCount{
+    display: inline-flex;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+    column-gap: 8px;
+    margin-left: 8px; 
+}
+
+.postfooter .commentBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 8px;
+    column-gap: 5px;
+}
+
+.commentBox  .userComment{
+    height: 18px;
+    margin-bottom: 8px;
+}
+
+.userComment span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.commentBox .commentCount {
+    height: 18px;
+    margin-bottom: 8px;
+}
+
+.commentCount a {
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(115, 115, 115);
+}
+
+.commentBox input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 18px;
+}
