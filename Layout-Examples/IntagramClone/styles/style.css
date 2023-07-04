@@ -147,8 +147,8 @@ main .container {
     width: 64px;
     height: 84px;
     padding: 0px 6px;
-    border: 1px solid yellow;
     background-color: transparent;
+    border: none;
 }
 
 button .userInfo {
@@ -173,7 +173,6 @@ button .userInfo:hover {
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 .userInfo .imgBorder {
