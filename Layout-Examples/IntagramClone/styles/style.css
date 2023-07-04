@@ -197,3 +197,147 @@ button .userInfo:hover {
     object-fit: cover;
     clip-path: circle(42%);
 }
+
+.postContent {
+    max-width: 630px;
+    width: 100%;
+    border: 2px dashed blueviolet;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.postContent .postLine {
+    width: 470px;
+    margin-top: 10px;
+}
+
+.postLine .postHeader {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: flex-start;
+}
+
+.postLine .postHeader .postPushTime {
+    white-space: pre-line;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(115, 115, 115);
+}
+
+.postPushTime span {
+    width: 18px;
+    height: 5px;
+    line-height: 18px;
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.postLine .postHeader .imgBorder {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background:
+    radial-gradient(rgba(0,0,0,0.15) 40% , transparent 0),
+    radial-gradient(white, 65%, transparent 0 ),
+    linear-gradient(to top right, orange, deeppink);
+    margin: 4px 0px 4px;
+}
+
+.postLine .postHeader .imgBorder img{
+    max-width: 42px;
+    max-height: 42px;
+    min-height: 42px;
+    min-width: 42px;
+    position: relative;
+    border-radius: 40px;
+    object-fit: cover;
+    clip-path: circle(42%);
+}
+
+.postLine img {
+    margin-left: auto;
+    padding: 8px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.postBody {
+    width: 470px;
+    height: 470px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.postBody img.post {
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.postContent .interactions {
+    display: flex;
+    margin-top: 4px;
+    padding-bottom: 6px;
+    column-gap: 1px;
+}
+
+.interactions .interactions_icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.interactions .interactions_icon i {
+    font-size: 22px;
+    text-align: center;
+}
+
+.interactions .interactions_icon i:nth-child(2) {
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;   
+}
+
+.interactions .interactions_icon i:nth-child(3) {
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;  
+}
+
+.interactions .interactions_icon:nth-child(4) {
+    margin-left: auto;
+}
+
+.interactions .interactions_icon i:nth-child(4) {
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px; 
+}
+
+
+
+.interactions .interactions_icon img {
+    min-width: 38px;
+    min-height: 38px;
+    max-width: 38px;
+    max-height: 38px;
+}
+
