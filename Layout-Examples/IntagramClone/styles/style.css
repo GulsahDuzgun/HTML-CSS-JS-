@@ -452,6 +452,7 @@ main .recommendUsers {
     height: 56px;
     width: 56px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .recommendUsers .userProfil .userInfoName {
@@ -460,6 +461,7 @@ main .recommendUsers {
     align-items: start;
     justify-content: center;
     width: 100%;
+    cursor: pointer;
     row-gap: 2px;
 }
 
@@ -470,15 +472,17 @@ main .recommendUsers {
     line-height: 56px;
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
     font-size: 12px;
     text-align: end;
 }
 
-.mentionName {
+.userInfoName .mentionName {
     word-break: break-word;
     font-weight: 600;
     overflow-y: visible;
     font-size: 14px;
+    cursor: pointer;
     line-height: 18px;
 }
 
@@ -486,6 +490,7 @@ main .recommendUsers {
     color:rgb(115, 115, 115);
     font-weight: 400;
     line-height: 18px;
+    cursor: pointer;
 }
 
 .recommendUsers .recommendTitle {
@@ -495,6 +500,7 @@ main .recommendUsers {
     width: 351px;
     height: 19px;
     align-items: center;
+    cursor: pointer;
 }
 
 .recommendTitle .recommend4you {
@@ -510,6 +516,7 @@ main .recommendUsers {
     color: rgb(0, 0, 0);
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .recommendUsersBox {
@@ -537,12 +544,14 @@ main .recommendUsers {
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .recommendUserInfo .recommendUserName {
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
+    cursor: pointer;
 }
 
 .recommendUserInfo .mutualFriend {
@@ -551,6 +560,7 @@ main .recommendUsers {
     color: rgb(115, 115, 115);
     white-space: nowrap;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .recommendUser div a {
@@ -558,5 +568,6 @@ main .recommendUsers {
     color: blue;
     font-size: 12px;
     font-weight: 600;
+    cursor: pointer;
     color: rgb(0, 149,246);
 }
