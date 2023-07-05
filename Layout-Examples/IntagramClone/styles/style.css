@@ -405,6 +405,7 @@ main .recommendUsers {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    align-items: center;
 }
 
 .recommendUsers .userProfil {
@@ -413,7 +414,7 @@ main .recommendUsers {
     display: flex;
     column-gap: 15px;
     margin: 30px 0px 10px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .recommendUsers .userProfil img {
@@ -434,11 +435,12 @@ main .recommendUsers {
 .userProfil a {
     width: 120px;
     height: 56px;
-    color: blue;
+    color: rgb(0, 149,246);
     line-height: 56px;
     text-decoration: none;
     font-weight: 600;
     font-size: 12px;
+    text-align: end;
 }
 
 .mentionName {
@@ -456,10 +458,10 @@ main .recommendUsers {
 }
 
 .recommendUsers .recommendTitle {
-    padding: 4px 0px 4px 0px;
+    padding: 4px 16px 4px 16px;
     display: flex;
     justify-content: space-between;
-    width: 319px;
+    width: 351px;
     height: 19px;
     align-items: center;
 }
@@ -467,7 +469,7 @@ main .recommendUsers {
 .recommendTitle .recommend4you {
     font-size: 14px;
     font-weight: 600;
-    line-height: 18pxs;
+    line-height: 18px;
     color: rgb(115, 115, 115);
 }
 
@@ -477,4 +479,53 @@ main .recommendUsers {
     color: rgb(0, 0, 0);
     font-weight: 600;
     text-decoration: none;
+}
+
+.recommendUsersBox {
+    padding: 8px 0px;
+}
+
+.recommendUsersBox .recommendUser {
+    width: 351px;
+    height: 50px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommendUser .userImage {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userImage img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.recommendUserInfo .recommendUserName {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.recommendUserInfo .mutualFriend {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.recommendUser div a {
+    text-decoration: none;
+    color: blue;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(0, 149,246);
 }
