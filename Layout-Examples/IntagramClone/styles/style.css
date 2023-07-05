@@ -274,7 +274,6 @@ button .userInfo:hover {
 }
 
 .postLine img {
-    margin-left: auto;
     padding: 8px;
     display: inline-block;
     align-items: center;
@@ -283,15 +282,18 @@ button .userInfo:hover {
 
 .postBody {
     width: 470px;
-    height: 470px;
+    height: auto;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .postBody img.post {
     object-fit: contain;
     border-radius: 12px;
+    max-width: 470px;
+    height: auto;
 }
 
 .postfooter .interactions {
