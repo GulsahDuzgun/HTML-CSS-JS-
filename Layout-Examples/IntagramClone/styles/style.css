@@ -14,17 +14,17 @@ body {
     background-color: rgb(255, 255, 255);
     margin: 0px;
     padding: 0px;
+    max-height:calc(100vh - 73px);
 }
 
 aside {
-    height: 100vh;
+    height: min-content;
     padding: 8px 12px 0px;
     border-right: 1px solid rgb(219, 219, 219);
 }
 
 aside, .slidebarHeader{
     width: 244px;
-    height:auto;
 }
 
 aside .logoName {
@@ -110,13 +110,12 @@ aside .logoName {
 main {
     display: flex;
     flex-direction: row;
-    width: 1013px;
+    width: auto;
     height: auto;
     font-size: 14px;
-    margin: 0px auto;
-    padding-top: 4px;
+    padding: 4px 131px 0px;
+    scroll-behavior: smooth;
     overflow-y: auto;
-
 }
 
 main .container {
@@ -395,4 +394,87 @@ button .userInfo:hover {
     outline: none;
     width: 100%;
     height: 18px;
+}
+
+main .recommendUsers {
+    max-width: 319px;
+    min-width: 319px;
+    height: 370px;
+    margin-top: 30px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.recommendUsers .userProfil {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    column-gap: 15px;
+    margin: 30px 0px 10px;
+    justify-content: space-around;
+}
+
+.recommendUsers .userProfil img {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+
+.recommendUsers .userProfil .userInfoName {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    row-gap: 2px;
+}
+
+.userProfil a {
+    width: 120px;
+    height: 56px;
+    color: blue;
+    line-height: 56px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.mentionName {
+    word-break: break-word;
+    font-weight: 600;
+    overflow-y: visible;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.userInfoName .legalName {
+    color:rgb(115, 115, 115);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.recommendUsers .recommendTitle {
+    padding: 4px 0px 4px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 319px;
+    height: 19px;
+    align-items: center;
+}
+
+.recommendTitle .recommend4you {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18pxs;
+    color: rgb(115, 115, 115);
+}
+
+.recommendTitle .seeAllOptions a {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-decoration: none;
 }
