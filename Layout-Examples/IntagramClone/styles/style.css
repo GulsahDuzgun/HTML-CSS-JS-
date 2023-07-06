@@ -124,6 +124,7 @@ main {
     padding: 4px 131px 0px;
     scroll-behavior: smooth;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 main .container {
@@ -570,4 +571,55 @@ main .recommendUsers {
     font-weight: 600;
     cursor: pointer;
     color: rgb(0, 149,246);
+}
+
+@media screen and (max-width: 1025px) {
+    
+    main .recommendUsers {
+       display: none;
+    }   
+
+    aside {
+        padding: 8px 12px 20px;
+        width: 72px;
+    }
+
+    aside .logoName {
+        width: 48px;
+        height: 96px;
+        margin:0px;
+        padding: 0px 0px 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside .logoName img {
+        content:url("../icons/instagram\ \(1\).png");
+        width: 24px;
+        height: 24px;
+    }
+    
+    .slidebarHeader ul, .slidebarHeader ul li {
+        width: 48px;
+    }
+
+    .slidebarHeader ul li a {
+        display: none;
+    }
+
+    main {
+        width: auto;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        max-width: 630px;
+    }
+
+    main .storyBox {
+        flex-shrink: 0;
+    }
 }
