@@ -617,7 +617,8 @@ main .recommendUsers {
         align-items: center;
         justify-content: center;
         max-width: 630px;
-        overflow-y: hidden
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     main .container {
