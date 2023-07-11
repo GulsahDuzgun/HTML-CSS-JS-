@@ -143,6 +143,7 @@ main .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .storyBox button {
@@ -574,6 +575,10 @@ main .recommendUsers {
 }
 
 @media screen and (max-width: 1025px) {
+
+    body, html {
+        overflow-y: auto;
+    }
     
     main .recommendUsers {
        display: none;
@@ -617,28 +622,41 @@ main .recommendUsers {
         align-items: center;
         justify-content: center;
         max-width: 630px;
-        overflow-y: hidden;
-        overflow-x: hidden;
     }
 
     main .container {
         width: auto;
         height: auto;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         position: relative;
     }
 
-    main .storyBox {
+    main .container .storyBox {
+        display: flex;
         border: 10px solid springgreen;
         height: 117px;
         width: 630px;
-        position: absolute;
         flex-shrink: 0;
+        justify-content: space-between;
+        align-items: center;
+        position:sticky;
+        z-index: 3;
+        top: 10px;
+    }
+
+    .storyBox button {
+        margin: 0;
     }
 
     main .postContent {
         flex-shrink: 1;
         flex-grow: 1;
         overflow-y: visible;
+        position: relative;
     }
 
     .sidebar .moreOptions a { 
