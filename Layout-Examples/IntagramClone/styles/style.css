@@ -640,4 +640,8 @@ main .recommendUsers {
         flex-grow: 1;
         overflow-y: visible;
     }
+
+    .sidebar .moreOptions a { 
+        display: none;
+    }
 }
