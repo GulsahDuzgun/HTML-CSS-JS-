@@ -85,4 +85,8 @@ ul li a {
         margin-bottom: 10px;
     }
 
+    .container{
+        flex-wrap: wrap;
+    }
+
 }
