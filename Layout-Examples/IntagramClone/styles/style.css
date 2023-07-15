@@ -17,14 +17,18 @@ body {
     max-height:calc(100vh - 73px);
 }
 
-aside {
-    height: min-content;
-    padding: 8px 12px 0px;
-    border-right: 1px solid rgb(219, 219, 219);
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    width: 244px;
+    padding: 8px 12px 20px;
+    overflow: hidden;
 }
 
-aside, .slidebarHeader{
+aside {
     width: 244px;
+    height: 100vh;
+    border-right: 1px solid rgb(219, 219, 219);
 }
 
 aside .logoName {
@@ -43,6 +47,12 @@ aside .logoName {
     cursor: pointer;
 }
 
+.slidebarHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .slidebarHeader ul {
     list-style: none;
     margin: 0px;
@@ -50,12 +60,12 @@ aside .logoName {
     width: 244px;
     flex-grow: 1;
     text-align: center;
-    height: 545px;
+    height: calc(100vh - 175px);
 }
 
 .slidebarHeader ul li {
     display: flex;
-    align-items: center;
+    align-items:center;
     width: 220px;
     height: 48px;
     padding: 12px;
@@ -63,18 +73,15 @@ aside .logoName {
     text-align: left;
     font-size: 16px;
     cursor: pointer;
-
 }
 
 .slidebarHeader div.moreOptions {
-    display: flex;
-    align-items: stretch;
+    display: inline-flex;
+    align-items: center;
     width: 220px;
     height: 56px;
     padding: 12px;
-    text-align: left;
-    flex-grow: 1;
-    margin: 8px 0px;
+    text-align: center;
 }
 
 .slidebarHeader .moreOptions img {
@@ -84,7 +91,6 @@ aside .logoName {
     min-height: 24px; 
     overflow-y: visible;
     cursor: pointer;
-
 }
 
 .moreOptions a {
@@ -121,7 +127,6 @@ main {
     width: auto;
     height: auto;
     font-size: 14px;
-    padding: 4px 131px 0px;
     scroll-behavior: smooth;
     overflow-y: auto;
     overflow-x: hidden;
@@ -144,6 +149,7 @@ main .container {
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    background-color: rgb(255, 255, 255);
 }
 
 .storyBox button {
@@ -433,7 +439,7 @@ main .recommendUsers {
     max-width: 319px;
     min-width: 319px;
     height: 370px;
-    margin-top: 30px;
+    margin-top: 50px;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -574,92 +580,45 @@ main .recommendUsers {
     color: rgb(0, 149,246);
 }
 
-@media screen and (max-width: 1025px) {
+.inputForMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: none;
+    flex-shrink: 1;
+}
 
-    body, html {
-        overflow-y: auto;
-    }
-    
-    main .recommendUsers {
-       display: none;
-    }   
+.inputContext {
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    background-color: rgb(239, 239, 239);    
+    border-radius: 8px;
+    padding: 0px 16px;
+    align-items: center;
+    column-gap: 5px;
+    flex-shrink: 1;
+    width: auto;
+}
 
-    aside {
-        padding: 8px 12px 20px;
-        width: 72px;
-    }
+.inputForMobile input {
+    font-size: 16px;
+    font-weight: 300;
+    color:rgb(0, 0, 0);
+    text-align: left;
+    background-color: rgb(239, 239, 239);    
+    border: none;
+    outline: none;
+    flex-shrink: 0.8;
+}
 
-    aside .logoName {
-        width: 48px;
-        height: 96px;
-        margin:0px;
-        padding: 0px 0px 23px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.inputForMobile .interactions {
+    flex-shrink: 1;
+}
 
-    aside .logoName img {
-        content:url("../icons/instagram\ \(1\).png");
-        width: 24px;
-        height: 24px;
-    }
-    
-    .slidebarHeader ul, .slidebarHeader ul li {
-        width: 48px;
-    }
-
-    .slidebarHeader ul li a {
-        display: none;
-    }
-
-    main {
-        width: auto;
-        height: auto;
-        margin: 0px auto;
-        display: flex;
-        flex-grow: 1;
-        align-items: center;
-        justify-content: center;
-        max-width: 630px;
-    }
-
-    main .container {
-        width: auto;
-        height: auto;
-        margin-right: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-
-    main .container .storyBox {
-        display: flex;
-        border: 10px solid springgreen;
-        height: 117px;
-        width: 630px;
-        flex-shrink: 0;
-        justify-content: space-between;
-        align-items: center;
-        position:sticky;
-        z-index: 3;
-        top: 10px;
-    }
-
-    .storyBox button {
-        margin: 0;
-    }
-
-    main .postContent {
-        flex-shrink: 1;
-        flex-grow: 1;
-        overflow-y: visible;
-        position: relative;
-    }
-
-    .sidebar .moreOptions a { 
-        display: none;
-    }
+.inputForMobile .interactions_icon i {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
 }

@@ -1,3 +1,66 @@
-@media(max-width:480px) {
+@media all and (max-width: 800px) {
+
+    body, html {
+        overflow-y: auto;
+    }
+
+    main {
+        align-items:flex-start!important;
+    }
     
+    main .recommendUsers {
+       display: none;
+    }   
+
+    aside {
+       display: none;
+    }
+
+    main {
+        width: auto;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        max-width: 630px;
+    }
+
+    main .container {
+        width: auto;
+        height: auto;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    main .container .storyBox {
+        display: flex;
+        height: 117px;
+        width: 630px;
+        flex-shrink: 1;
+        justify-content: space-between;
+        align-items: center;
+        position: static !important;
+    }
+
+    .storyBox button {
+        margin: 0;
+    }
+
+    main .postContent {
+        flex-shrink: 1;
+        flex-grow: 1;
+        overflow-y: visible;
+        position: relative;
+    }
+
+    .inputForMobile {
+        display: flex;
+    }
+
 }

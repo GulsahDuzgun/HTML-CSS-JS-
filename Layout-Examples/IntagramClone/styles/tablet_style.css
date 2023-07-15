@@ -1,0 +1,7 @@
+@media all and (max-width: 1120px) {
+
+    main .recommendUsers {
+        display: none;
+     }   
+    
+}

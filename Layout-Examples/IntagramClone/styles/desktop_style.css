@@ -1,3 +1,112 @@
-@media(min-width:1026px) {
+@media all and (max-width:1200px) {
+    body, html {
+        overflow-y: auto;
+    } 
+
+    aside {
+        padding: 8px 12px 20px;
+        width: 72px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside .logoName {
+        width: 48px !important;
+        height: 96px;
+        padding: 0px 20px 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside .logoName img {
+        content:url("../icons/instagram\ \(1\).png");
+        width: 24px;
+        height: 24px;
+    }
+
+    .sidebar {
+        width: 64px !important;
+    }
+
+    .slidebarHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
+    .slidebarHeader ul, .slidebarHeader ul li {
+        width: 48px !important;
+    }
+
+    .slidebarHeader ul li {
+        padding: 0px;
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .slidebarHeader ul li a {
+        display: none;
+    }
+
+    .sidebar .moreOptions {
+        width: 48px !important;
+    }
+
+    main {
+        width: auto;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    main .container {
+        width: auto;
+        height: auto;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    main .container .storyBox {
+        display: flex;
+        height: 117px;
+        width: 630px;
+        flex-shrink: 0;
+        justify-content: space-between;
+        align-items: center;
+        position:sticky;
+        z-index: 3;
+        top: 10px;
+    }
+
+    .storyBox button {
+        margin: 0;
+    }
+
+    main .postContent {
+        flex-shrink: 1;
+        flex-grow: 1;
+        overflow-y: visible;
+        position: relative;
+    }
+
+    .sidebar .moreOptions a { 
+        display: none;
+    }
 }
