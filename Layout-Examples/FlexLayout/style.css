@@ -22,10 +22,21 @@
 nav ul {
     display: flex;
     flex-direction: row;
-    padding: 20px;
     list-style: none;
     background-color: black;
+}
 
+nav ul li {
+    padding: 20px;
+
+}
+
+nav ul li:hover {
+    background-color: #ddd;
+}
+
+nav ul li:hover a {
+    color: black;
 }
 
 ul li a {
@@ -37,11 +48,12 @@ ul li a {
 .container {
     padding: 15px;
     display: flex;
+    column-gap: 30px;
 }
 
 .main_context {
     display: flex;
-    width: 90%;
+    flex: 55%;
 }
 
 .context {
@@ -57,7 +69,7 @@ ul li a {
 }
 
 .add_section {
-   width: 50%;
+   flex-basis: 45%;
    display: flex;
    flex-direction: column;
    line-height: 18px;
