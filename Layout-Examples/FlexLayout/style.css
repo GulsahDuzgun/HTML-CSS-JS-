@@ -99,6 +99,15 @@ ul li a {
 
     .container{
         flex-wrap: wrap;
+        display: flex;
+    }
+
+    .add_section {
+        order:-2;
+        align-items: stretch;
+        justify-content: stretch;
+        width: 100%;
+        flex-grow: 1;
     }
 
 }
