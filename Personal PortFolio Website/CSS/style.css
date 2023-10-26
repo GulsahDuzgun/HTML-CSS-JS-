@@ -22,3 +22,25 @@ body {
 ::before, ::after {
     box-sizing: border-box;
 }
+
+.aside {
+    left:0px;
+    top:0px;
+    width: 270px;
+    height: 100vh;
+    z-index:10;
+    background: var(--bg-black-100);
+    position: fixed;
+}
+
+.section {
+    right: 0px;
+    top:0px;
+    left: 270px;
+    min-height: 100vh;
+    z-index: 0px;
+    display: block;
+    position:fixed;
+    background: var(--text-black-900);
+    opacity: 1;
+}
