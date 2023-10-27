@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Montserrat&family=Oleo+Script:wght@700&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600;700&family=Titillium+Web:ital,wght@1,300&display=swap');
+
 :root {
     --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
@@ -9,6 +11,8 @@
 body {
     line-height: 1.5;
     font-size: 16px;
+    font-family:'Poppins' sans-serif;
+
 }
 
 * {
@@ -23,6 +27,10 @@ body {
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 .aside {
     left:0px;
     top:0px;
@@ -31,6 +39,11 @@ body {
     z-index:10;
     background: var(--bg-black-100);
     position: fixed;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--bg-black-50);
 }
 
 .section {
@@ -43,4 +56,116 @@ body {
     position:fixed;
     background: var(--text-black-900);
     opacity: 1;
+}
+
+.aside .logo {
+    position: absolute;
+    top:50px;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.aside .logo a {
+    color:var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    letter-spacing:5px;
+    font-size:30px;
+    position:relative;
+}
+
+.aside .logo a span {
+    font-family: 'Clicker Script', cursive;
+    font-family: 40px;
+}
+
+.aside .logo a:after {
+    content: " ";
+    border-top:5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.aside .logo a:before {
+    content: " ";
+    border-bottom:5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left:0px
+}
+
+.aside .nav {
+    margin-top: 50px;
+}
+
+.aside .nav li {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.aside .nav li a {
+    font-size:16px;
+    font-weight: 600px;
+    display: block;
+    color:var(--text-black-900);
+    border-bottom:1px solid var(--bg-black-50);
+    padding: 5px 15px;
+}
+
+.aside .nav li  a.active {
+    color:var(--skin-color)
+}
+
+.aside .nav li a i {
+    margin-right: 15px;
+}
+
+.aside .nav-togler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    background-color: var(--bg-black-100);
+    left:300px;
+    top:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside .nav-togler span {
+    height: 2px;
+    width: 18px;
+    background-color: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+
+.aside .nav-togler span::before {
+    content: "";
+    height: 2px;
+    width: 18px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top:-6px;
+    left: 0px;
+}
+
+.aside .nav-togler span::after {
+    content: "";
+    height: 2px;
+    width: 18px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top:6px;
+    left: 0px;
 }
