@@ -210,3 +210,30 @@ ul {
     text-align: center;
     position:relative;
 }
+
+h3.hello {
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+h3.hello span {
+    font-family:'Cliker Script', cursive;
+    font-size:30px;
+    font-weight: 700;
+    color:var(--skin-color)
+}
+
+h3.my-profession {
+    font-size: 30px;
+    margin:15px 0px;
+}
+
+.typing {
+    color:var(--skin-color);
+}
+
+.home-info p {
+    margin-bottom: 70px;
+    font-size:20px;
+    color:var(--text-black-700);
+}
