@@ -12,7 +12,15 @@ body {
     line-height: 1.5;
     font-size: 16px;
     font-family:'Poppins' sans-serif;
+    background-color: var(--bg-black-900);
+}
 
+body.dark {
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#fff;
+    --text-black-700:#e9e9e9;
 }
 
 * {
@@ -37,7 +45,7 @@ ul {
     width: 270px;
     height: 100vh;
     z-index:10;
-    background:#ddd;
+    background-color: var(--bg-black-100);
     position: fixed;
     padding: 30px;
     display: flex;
@@ -71,6 +79,7 @@ ul {
     max-width:1400px;
     width: 100%;
     margin: auto;
+    background-color: var(--bg-black-900);
 }
 
 .section .container {
@@ -375,7 +384,9 @@ h3.my-profession {
 
 .about .about-content .personal-info .info-item {
     flex:  0 0 50%;
-    max-width:50%
+    max-width:50%;
+    margin-top: 30px;
+
 }
 
 .about .about-content .personal-info .info-item p {
@@ -408,7 +419,7 @@ h3.my-profession {
 }
 
 .about .about-content .skills .skill-item {
-    background-color: #eee;
+    background-color: var(--bg-black-100);
     flex: 0 0 100%;
     margin-bottom: 25px;;
 }
