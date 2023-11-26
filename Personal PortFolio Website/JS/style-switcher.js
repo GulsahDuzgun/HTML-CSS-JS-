@@ -11,3 +11,21 @@ window.addEventListener("scroll",() => {
         document.querySelector(".style-switcher").classList.remove("open");
     }
 })
+
+/*______________________ Theme Color setActive  ______________________*/
+const alternativeClass = document.querySelectorAll(".alternate-style");
+function setActiveStyle (color) {
+
+    alternativeClass.forEach( e => {
+
+        if(e.getAttribute("title") === color)
+        {
+            e.removeAttribute("disabled")
+        }
+        else 
+        {
+            e.setAttribute("disabled", "true")
+        }
+
+    })
+}
