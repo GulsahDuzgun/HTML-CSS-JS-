@@ -1,44 +1,31 @@
-# Hello There
-## header2
-#### header4
+#  Portfolio Website
 
->Blockqote
+  *I learn how to use flex in CSS and toggle, scroll, contains, querySelector, load, getAttribute, removeAttribute etc. in javascript with this project*
 
-* list-item
-* list-item2
-  - list item -
-  - list item
-        * liste
+>#
+>### Features
+>* Built-with HTML5 , CSS3 and JavaScript
+>* 100% Responsive Design
+>* Well-commented code
+>* Live Style Switcher
+>* 5 Color Skins
+>* Light/Dark Theme
+>#
+  
 
-*italic 1 tane yıldızla çevrili*
-**bold iki yıldızla çevrili**
-***bold and italic ise 3 yıldız***
+
+
 
 ---
 
-[Google için tıklayınız](https://google.com)
-![Resim Alt](img/client1.jpg)
+
+![ Portfolio Website](img/Portfolio%20Website.png)
 
 
 
 ***
 
-```javascript
-console.log("Hello world")
-function () => {
-
-}
-````
-
-`Inline code section`
-
-### Tablolar
-
-| col1 | col2  | col3|
-|:--- | :---: | ---:|
-| 1 |2 |3|
-| ---: | :--- | :---: |
-| a | b |c |
+![ Portfolio Website](img/Portfolio%20Website%20-2.png)
 
 
 
