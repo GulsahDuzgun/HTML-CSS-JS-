@@ -33,3 +33,25 @@ var brandSwiper = new Swiper('.brand-swiper', {
   });
 
 /*=============== ANIME SWIPER ===============*/
+var animeSwiper = new Swiper('.anime-swiper', {
+    spaceBetween: 24,
+    loop: true,
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+        },
+        1400: {
+            slidesPerView: 5,
+            spaceBetween: 24,
+        },
+    },
+  });
