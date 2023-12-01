@@ -1,6 +1,6 @@
 #  Portfolio Website
 
-  *I learn how to use flex in CSS and toggle, scroll, contains, querySelector, load, getAttribute, removeAttribute etc. in javascript with this project*
+  *I learn how to use flex in CSS and toggle, scroll, contains, querySelector, load, getAttribute, removeAttribute etc. functions in javascript with this project*
 
 >#
 >### Features

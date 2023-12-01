@@ -488,6 +488,10 @@ object-fit: cover;
   .footer__container {
     grid-template-columns: 1fr;
   }
+
+  .footer__instagram {
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 
 /* For small devices */
@@ -510,6 +514,10 @@ object-fit: cover;
 
   .footer__container {
     padding-block: 2rem;
+  }
+
+  .footer__instagram {
+    grid-template-columns: repeat(2,1fr);
   }
 }
 
