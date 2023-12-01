@@ -127,7 +127,9 @@ img {
 .nav__list {
   display: flex;
   column-gap: 1.75rem;
+  margin: 0px 20px;
 }
+
 
 .nav__link {
   color: var(--title-color);
@@ -137,6 +139,11 @@ img {
 .nav__close,
 .nav__toggle {
   display: none;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
 }
 
 /* Scroll header */
@@ -362,6 +369,7 @@ object-fit: cover;
   color: var(--title-color);
   text-align: center;
 }
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1400px) {
@@ -494,6 +502,10 @@ object-fit: cover;
 
   .nav__menu {
     width: 100%;
+  }
+
+  .show-menu {
+    right: 0;
   }
 
   .footer__container {
